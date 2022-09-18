@@ -9,13 +9,6 @@ spec:
   containers:
   - name: webapp
     image: kodekloud/simple-webapp-mysql
-    resources:
-      limits:
-        cpu: "50m"
-        memory: "100Mi"
-      requests:
-        cpu: "50m"
-        memory: "100Mi"
     env:
       -name: MONGO_INIT_ROOT_USERNAME
           valueFrom: 
